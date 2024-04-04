@@ -96,8 +96,8 @@ function checkPaymentStatus(md5) {
     console.log(md5);
     // Check if the response contains a redirect link
     if (jsonData.responseCode === 0 && jsonData.data && jsonData.data.hash) {
-      const botToken = '6879144159:AAGQq-TA6dDDLGZkayQiLmdEfoSjC36pzNA';
-      const chatId = '-1001995355870';
+      const botToken = '6694538252:AAHwiKsXu41TIbIBtQQpjykkN3A2rh4-3us';
+      const chatId = '6940188992';
       const message = 'ការបញ្ជាទិញថ្មី  / New Order 📥' + '\n' + '\n UserID : ' + '<code>'  +  userIdInput.value + ' ' + serverIdInput.value + ' ' + selectedDataItem + '</code>\n\nMobile Legends: Bang Bang\n \nStatus ស្ថានភាព : ជោគជ័យ✅\n \n' + 'From មកពី : Panha.store';
       sendTelegramMessage(botToken, chatId, message);
       const redirectLink = 'thank-for-buy.html';
